@@ -230,7 +230,7 @@ class VideoRecorder(Thread):
 
         assert(self.video_cap.isOpened())
         
-        fourcc = cv2.VideoWriter_fourcc(*'mpeg')
+        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
         self.video_out = cv2.VideoWriter("output/recording.mp4", fourcc, 30.0, size)
         self.event.wait()
         self.proceed_event.set()
