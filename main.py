@@ -531,9 +531,9 @@ class ExpApp(QMainWindow):
             # Convention:
             # File: (VIDEO_TITLE, getResource(VIDEO_PATH))
             # Youtube: (VIDEO_TITLE, YOUTUBE_URL)
-            ("Pre-video", "https://www.youtube.com/watch?v=ElnxAu6X_s4"),
-            ("Main-video", "https://www.youtube.com/watch?v=ElnxAu6X_s4"),
-        ]
+            ("Pre-video", "https://youtu.be/d2kxUVwWWwU?si=gok7BnkEbGazchyT"),
+            ("Main-video", "https://youtu.be/d2kxUVwWWwU?si=gok7BnkEbGazchyT"),
+         ]
         ###############################################################
 
         self.videoIndex = 0
