@@ -556,7 +556,9 @@ class ExpApp(QMainWindow):
             https://github.com/devos50/vlc-pyqt5-example
             :return:
             """
-            self.instance = vlc.Instance()
+            self.instance = vlc.Instance(
+               "--network-caching=3000",
+               "--http-user-agent=Mozilla/5.0")
             self.media_player: vlc.MediaPlayer = None
 
         # initChild
