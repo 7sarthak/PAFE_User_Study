@@ -721,7 +721,7 @@ class ExpApp(QMainWindow):
 
             # Set Lecture Instruction Widget
             if True:
-                instruction_layout = QVBoxLayout(self)
+                instruction_layout = QVBoxLayout()
 
                 lecture_text = QLabel(
                     'Now, you will watch one short + one long lecture.\n\n'
