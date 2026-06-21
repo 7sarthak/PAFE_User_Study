@@ -1,4 +1,3 @@
-from urlvalidator import URLValidator, ValidationError
 import yt_dlp
 
 def get_best_url(path):
