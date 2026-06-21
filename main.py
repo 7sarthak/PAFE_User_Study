@@ -626,7 +626,7 @@ class ExpApp(QMainWindow):
 
             # Set Notification Widget
             if True:
-                notification_layout = QVBoxLayout(self)
+                notification_layout = QVBoxLayout()
 
                 noti_text = QLabel(
                     'Thank you for your participation in the project.\n'
@@ -684,7 +684,7 @@ class ExpApp(QMainWindow):
 
             # Set Calibration Instruction Widget
             if True:
-                instruction_layout = QVBoxLayout(self)
+                instruction_layout = QVBoxLayout()
 
                 detail_text = QLabel(
                     'Now, you will proceed an loop of "Looking at a circle" -> "Clicking the circle".\n\n'
@@ -708,7 +708,7 @@ class ExpApp(QMainWindow):
 
             # Set Calibration Widget
             if True:
-                calib_layout = QVBoxLayout(self)
+                calib_layout = QVBoxLayout()
                 # Calibration button
                 self.ellipse_button = QPushButton('', self)
                 self.ellipse_button.move(0, 0)
@@ -766,7 +766,7 @@ class ExpApp(QMainWindow):
 
             # Set Lecture Video Widget
             if True:
-                vlc_layout = QVBoxLayout(self)
+                vlc_layout = QVBoxLayout()
                 # VLC player
                 # In this widget, the video will be drawn
                 self.video_frame = QFrame()
@@ -780,7 +780,7 @@ class ExpApp(QMainWindow):
                 #self.video_frame.updateGeometry()
 
                 # Lower Layout ###################################################################
-                vlc_lower_layout = QHBoxLayout(self)
+                vlc_lower_layout = QHBoxLayout()
 
                 vlc_lower_layout.addStretch(1)
 
@@ -817,7 +817,7 @@ class ExpApp(QMainWindow):
                 vlc_lower_layout.addStretch(1)
 
                 # Volume Layout ####################################################
-                vlc_volume_layout = QHBoxLayout(self)
+                vlc_volume_layout = QHBoxLayout()
                 vlc_volume_layout.setSpacing(1)
 
                 vlc_volume_layout.addStretch(1)
@@ -854,7 +854,7 @@ class ExpApp(QMainWindow):
 
             # Finish scene
             if True:
-                finish_layout = QVBoxLayout(self)
+                finish_layout = QVBoxLayout()
                 self.finish_text = 'Thank you for the participation!\n'\
                                    'Please do not forget to submit the result :)\n\n'
                 self.finish_label = QLabel(self.finish_text)
