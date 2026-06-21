@@ -1199,6 +1199,7 @@ class ExpApp(QMainWindow):
         self.probeRunner.ui_signal.connect(self.updater.alertProbeRunnerFinished)
 
         url = parsing.get_best_url(self.videos[self.videoIndex][1])
+        print("VIDEO URL:", url)
         # url = self.videos[self.videoIndex][1]
         self.log("url,%s" % url)
         try:
