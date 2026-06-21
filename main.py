@@ -601,7 +601,7 @@ class ExpApp(QMainWindow):
 
             # Set Camera Setting Screen
             if True:
-                camera_layout = QVBoxLayout(self)
+                camera_layout = QVBoxLayout()
                 camera_text = QLabel(
                     'Please move your monitor/laptop close and center your face so it exceeds BLUE rectangle.\n\n'
                     'Please avoid direct lights into the camera.'
