@@ -531,8 +531,8 @@ class ExpApp(QMainWindow):
             # Convention:
             # File: (VIDEO_TITLE, getResource(VIDEO_PATH))
             # Youtube: (VIDEO_TITLE, YOUTUBE_URL)
-            ("Pre-video", "https://youtu.be/d2kxUVwWWwU?si=gok7BnkEbGazchyT"),
-            ("Main-video", "https://youtu.be/d2kxUVwWWwU?si=gok7BnkEbGazchyT"),
+            ("Pre-video", "./videos/pre.mp4"),
+            ("Main-video","./videos/main.mp4"),
          ]
         ###############################################################
 
@@ -1198,7 +1198,7 @@ class ExpApp(QMainWindow):
         self.probeRunner.signal.connect(self.showDialog)
         self.probeRunner.ui_signal.connect(self.updater.alertProbeRunnerFinished)
 
-        url = parsing.get_best_url(self.videos[self.videoIndex][1])
+        url = self.videos[self.videoIndex][1]
         print("VIDEO URL:", url)
         # url = self.videos[self.videoIndex][1]
         self.log("url,%s" % url)
